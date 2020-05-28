@@ -1,8 +1,8 @@
 import requests
 import datetime
 
-urlc = 'http://127.0.0.1:8000'
-urls = 'http://127.0.0.1:8000/send'
+urlc = 'https://nairman.pythonanywhere.com'
+urls = 'https://nairman.pythonanywhere.com//send'
 client = requests.session()
 client.get(urlc)
 csrftoken = client.cookies['csrftoken']
