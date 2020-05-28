@@ -2,7 +2,7 @@ import requests
 import datetime
 
 urlc = 'https://nairman.pythonanywhere.com'
-urls = 'https://nairman.pythonanywhere.com//send'
+urls = 'https://nairman.pythonanywhere.com/send'
 client = requests.session()
 client.get(urlc)
 csrftoken = client.cookies['csrftoken']
